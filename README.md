@@ -18,20 +18,20 @@ Solución mínima con arquitectura limpia: Domain, Application, Infrastructure, 
 
 - Construir imagen:
   ```bash
- docker build -t productapi:dev .
+  docker build -t productapi:dev .
   ```
 - Ejecutar contenedor:
   ```bash
   docker run --rm -p 8080:8080 -e ASPNETCORE_ENVIRONMENT=Development productapi:dev
   ```
-## deberia abrir la Url http://localhost:8080/swagger
+## deberia abrir la Url:
   
 - Swagger UI: http://localhost:8080/swagger
 - Autenticación: POST `/api/auth/login` con cuerpo `{ "username": "admin", "password": "Password123!" }` y usar `Bearer <token>`.
 
 ## Collection Postman - solo seria reemplazar el token y correr 
 
-https://.postman.co/workspace/Personal-Workspace~5a5e6972-ac8f-462e-b52a-a978c28aaeca/collection/8336714-66679b93-8662-46c4-a7f7-379115f141bc?action=share&creator=8336714
+- https://.postman.co/workspace/Personal-Workspace~5a5e6972-ac8f-462e-b52a-a978c28aaeca/collection/8336714-66679b93-8662-46c4-a7f7-379115f141bc?action=share&creator=8336714
 
 ## Endpoints
 
